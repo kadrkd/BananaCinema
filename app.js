@@ -1,27 +1,71 @@
-const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser'); 
+$(document).ready(() => {
+    $('#hamburger-menu').click(() => {
+        $('#hamburger-menu').toggleClass('active')
+        $('#nav-menu').toggleClass('active')
+    })
 
-require('dotenv/config');
-var path = require('path');
-var serveStatic = require('serve-static');
+    let navText = ["<i class='bx bx-chevron-left'></i>", "<i class='bx bx-chevron-right'></i>"]
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+    $('#hero-carousel').owlCarousel({
+        items: 1,
+        dots: false,
+        loop: true,
+        nav:true,
+        navText: navText,
+        autoplay: true,
+        autoplayHoverPause: true
+    })
 
-app.use('/', express.static(path.join(__dirname, 'public')))
+    $('#top-movies-slide').owlCarousel({
+        items: 2,
+        dots: false,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            500: {
+                items: 3
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 6
+            }
+        }
+    })
 
-//Connection to online DB
-mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true }, () =>{  
-    console.log('Connected to db');
+    $('.movies-slide').owlCarousel({
+        items: 2,
+        dots: false,
+        nav:true,
+        navText: navText,
+        margin: 15,
+        responsive: {
+            500: {
+                items: 2
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 6
+            }
+        }
+    })
 })
-
-authRoute = require('./routes/auth');
-app.use('/api/user', authRoute);
-
-searchRoute = require('./routes/search');
-app.use('/api/films', searchRoute);
-
-
-app.listen(3000);
+(function () {
+    'use strict';
+    window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
