@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav-wrapper">
+    <header>
+         <div class="nav-wrapper">
         <div class="container">
             <div class="nav">
                 <a href="#" class="logo">
@@ -39,6 +40,8 @@
             </div>
         </div>
     </div>
+    </header>
+   
     <div class="search-box">
         <form action="#">
           <input type="text" placeholder="Search..." name="search">
@@ -46,72 +49,555 @@
         </form>
     </div>
     <div class="main-content">
-        <div class="filter">
-            <div class="genre">
-                <input type="checkbox" id="hd-1" class="hide">
-                    Genre
-                <label for="hd-1">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-                </label>
-                    <p>
-                        <br><a href="horror.html">Horror </a><br>
-                        <br><a href="">Crime/ Gangster</a> <br>
-                        <br><a href="">Crime/ Gangster</a> <br>
-                        <br><a href="">Fantasy</a> <br>
-                        <br><a href="">Epics/ Historical</a> <br>
-                        <br><a href="">Action Adventure</a>  <br>
-                    </p>
-            </div>
-            <div class="year">
-                <input type="checkbox" id="hd-2" class="hide">
-                    Year
-                <label for="hd-2">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-                </label>
-                    <p>
-                        <br><a href="#">2001-2006 </a><br>
-                        <br><a href="">2007-2014</a> <br>
-                        <br><a href="">2015-2020</a> <br>
-                        <br><a href="">2021</a> <br>
-                   </p>
-            </div>
-            <div class="country">
-                <input type="checkbox" id="hd-3" class="hide">
-                    Country
-                <label for="hd-3">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-                </label>
-                    <p>
-                        <br><a href="#">Kazakhstan </a><br>
-                        <br><a href="">USA</a><br>
-                        <br><a href="">Japan</a><br>
-                        <br><a href="">Russia</a><br>
-                        <br><a href="">England</a><br>
-                   </p>
-            </div>
-        </div>
         <div class="film-list">
-            <div>
-                <img src="./images/movies/f1.jpg" alt="">
-                <div class="movie-infos top-down delay-2">
-                    <div class="movie-info">
-                        <i class="bx bxs-star"></i>
-                        <span>9.9</span>
+            <div class="col-md-12 outline-div">
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/cartoons/over-the-moon.jpg" alt="" /></a>
                     </div>
-                    <div class="movie-info">
-                        <i class="bx bxs-time"></i>
-                        <span>181 mins</span>
-                    </div>
-                    <div class="movie-info">
-                        <span>2019</span>
-                    </div>
-                    <div class="movie-info">
-                        <span>16+</span>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
                     </div>
                 </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/movies/hunter-killer.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Hunter Killer</a>
+                        <p class="dirctr">USA, 2018, 18+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;6/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            	
+    Gerard Butler
+    Gary Oldman
+    Common
+    Linda Cardellini
+    Toby Stephens   </p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;	Donovan Marsh</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action thriller</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 121 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/movies/theatre-dead.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/5.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/cartoons/your-name.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/series/supergirl.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/movies/insidious.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/movies/call.jpg" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="#"><img src="./images/movies/captain-marvel.png" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="#">Over the Moon</a>
+                        <p class="dirctr">USA, 2020, 6+</p>								
+                        <p class="ratingview"> Average Rating:</p>
+                        <div class="rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                            <p class="ratingview">
+                                &nbsp;7/10  
+                            </p>
+                        
+                        <div class="yrw">
+                            <div>           			
+                                <select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+                                    <option value="0">Your rating</option>	
+                                    <option value="1">1.Poor</option>
+                                    <option value="2">2.(Below average)</option>
+                                    <option value="3">3.Average</option>
+                                    <option value="4">4.(Above average)</option>
+                                    <option value="5">5.Watchable</option>
+                                    <option value="6">6.(Good)</option>
+                                    <option value="7">7.(Very good)</option>
+                                    <option value="8">8.Outstanding</option>
+                                    <option value="9">9.Brilliant</option>
+                                    <option value="10">10.Oscar</option>
+                                </select>
+                            </div>
+                            <div class="rtm">
+                                <a href="#">REVIEW THIS MOVIE</a>
+                            </div>
+                            <div class="wt">
+                                <a href="#">WATCH THIS TRAILER</a>
+                            </div>
+                        </div>
+                        
+                        <p class="info">CAST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cathy Ang
+                            Phillipa Soo
+                            Ken Jeong
+                            John Cho
+                            Ruthie Ann Miles
+                            Margaret Cho
+                            Sandra Oh</p>
+                        <p class="info">DIRECTION: &nbsp;&nbsp;&nbsp;&nbsp;Glen Keane, John Carse</p>
+                        <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fantasy</p>
+                        <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; 95 minutes</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+        
+    
+    
     <footer class="section">
         <div class="container">
             <div class="row">

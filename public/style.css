@@ -1,6 +1,6 @@
 :root {
     --main-color: #ada30f;
-    --body-bg: #444242;
+    --body-bg: #000000;
     --box-bg: #444242;
     --text-color: #ffffff;
 
@@ -252,6 +252,8 @@ a.movie-item:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-top: calc(var(--space-top) / 2);
+    z-index: 10001;
+    
 }
 
 .movie-info {
@@ -465,6 +467,8 @@ footer.section {
     background-color: #000000;
 }
 
+
+
 footer a:hover {
     color: var(--main-color);
 }
@@ -523,9 +527,9 @@ footer .content {
 
 .foo {
     padding: 10px;
-    border-top: 1px solid var(--body-bg);
-    background-color: var(--box-bg);
+    background-color: #000000;
     text-align: center;
+    
 }
 
 @media only screen and (max-width: 1280px) {
@@ -763,7 +767,7 @@ footer .content {
     float: right;
     margin-right: 35%;
     margin-top: 5%;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
     width: 30%;
     background-color: rgb(121, 121, 126);
 }
@@ -784,59 +788,164 @@ footer .content {
     float: left;
     background-color: rgb(185, 185, 187);
 }
-.hide, .hide + label ~ p {
-    display: none; 
-}
-  
-.hide:checked + label + p {
-    display: block; 
-    
-}
-
-.genre a:hover, .year a:hover , .country a:hover{
-    outline: yellow 1px solid;
-}
 
 .main-content{ 
     margin-left: 10%;
     margin-top: 10%;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
     background-color: rgb(92, 92, 95);
     width: 80%; 
-    height: 1000px;    
-}
-
-.genre{
-    width: 100%;
-    outline: rgb(15, 15, 15) solid 1.5px;
-    display:block;
-}
-
-.year{
-    width: 100%;
-    outline: rgb(17, 17, 17) solid 1.5px;
-    display:block;
-}
-
-.country{   
-    width: 100%;
-    outline: rgb(7, 7, 7) solid 1.5px;
-    display:block;
-} 
-
-.filter{
-    width: 10%;
-    display: inline-block;
-    margin-left: 2%;
-}
-
-.filter a:hover{
-    color: var(--main-color);
+    height: 4200px;    
+    
 }
 
 .film-list{
-    outline: 1px solid yellow;
-    width: 50%;
+    /* outline: 1px solid yellow; */
+    width: 80%;
     height: 100%;
-    margin-left: 25%;    
+    margin-left: 10%;    
+    
+}
+
+.outline-div{
+    /* outline: rgb(255, 255, 255) solid 1px; */
+   
+}
+
+p.review{
+	color:#f4f4f4;
+	font-size:1em;
+	font-weight:400;
+	line-height: 1em;
+    
+}
+
+.review {
+	margin-top: 1px;
+    /* outline: rgb(255, 255, 255) solid 1px; */
+   
+}
+
+.movie-pic {
+	float:left;
+	width:24%;
+	margin-right:3%;
+}
+
+.movie-pic img {
+	width: 100%;
+}
+
+.review-info {
+	float:left;
+	width:73%;
+}
+
+a.span {
+	color: rgb(255, 255, 255);
+	font-size: 1.8em;
+	text-decoration:none;
+	font-weight: 600;
+}
+
+p.info {
+	font-size: 1em;
+	font-weight: 600;
+	color: rgb(255, 255, 255);
+	margin: 15px 0px;
+	height: 30px;
+	overflow: hidden;
+}
+
+
+p.dirctr {
+	color: #B1B1B1;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+p.dirctr a {
+	color: #B1B1B1;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-decoration:none;
+}
+
+p.ratingview {
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	font-weight: 600;
+	float: left;
+	margin:10px 0px;
+}
+
+.rating {
+    direction: rtl;
+    text-align: center;
+      float: left;
+      margin:10px 10px;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > span:hover,
+  .rating > span:hover ~ span {
+    color: transparent;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     left: 0;
+     color: gold;
+  }
+
+  .yrw {
+	margin: 5em 0;
+    padding: 10px;
+}
+
+.dropdown {
+    padding: 4px 0;
+    float:left;
+    outline: none;
+    width:33%;
+    margin-bottom:0.5em;
+  }
+
+  .rtm{
+	float:left;
+	width:32%;
+	margin-top:6px;
+    margin-left: 2%;
+}
+
+.rtm a {
+	text-decoration:none;
+	color:#fff;
+	background:#b9df11;
+	padding:5px 10px;
+    margin-left: 20%;
+}
+
+.wt {
+	float:left;
+	width:33%;
+	margin-top:6px;
+    
+}
+.wt a {
+	text-decoration:none;
+	color:#fff;
+	background:#37a4c5;	
+	padding:5px 10px;
+    
+}
+
+.rtm a:hover,.wt a:hover {
+	background:#b9df11;
 }
