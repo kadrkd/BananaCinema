@@ -807,11 +807,6 @@ footer .content {
     
 }
 
-.outline-div{
-    /* outline: rgb(255, 255, 255) solid 1px; */
-   
-}
-
 p.review{
 	color:#f4f4f4;
 	font-size:1em;
@@ -902,6 +897,14 @@ p.ratingview {
      position: absolute;
      left: 0;
      color: gold;
+  }
+
+  .rating-active{
+    content: "\2605";
+    /* position: absolute; */
+    left: 0;
+    color: gold;
+
   }
 
   .yrw {
