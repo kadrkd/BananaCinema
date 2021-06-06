@@ -901,10 +901,8 @@ p.ratingview {
 
   .rating-active{
     content: "\2605";
-    /* position: absolute; */
-    left: 0;
+    position: absolute;
     color: gold;
-
   }
 
   .yrw {
@@ -950,7 +948,7 @@ p.ratingview {
 }
 
 .rtm a:hover,.wt a:hover {
-	background:#b9df11;
+	background:#a7cc02;
 }
 
 #zatemnenie {
@@ -981,16 +979,16 @@ p.ratingview {
       display: block;
     }
   .close {
-    display: inline-block;
+    /* display: inline-block; */
     /* border: 1px solid #0000cc; */
-    color: #0000cc;
+    color: #eeff00;
     padding: 0 12px;
-    margin: 10px;
+    /* margin: 10px; */
     text-decoration: none;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     font-size: 14pt;
     cursor:pointer;
-
+    float: right;
   }
   .close:hover {
       background: #e6e6ff;
@@ -1178,3 +1176,10 @@ p.ratingview {
   max-width: 7%;
   height: auto;
 }
+
+.like{
+    color: red;
+    float: right;
+    padding: 20px;
+}
+
