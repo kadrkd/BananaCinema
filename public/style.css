@@ -1183,3 +1183,50 @@ p.ratingview {
     padding: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.Sub-body {
+    background: linear-gradient(to right, rgb(0, 0, 0) 52%, rgba(254, 191, 1, 1) 53%, rgba(254, 191, 1, 1) 100%);
+    font-family: 'Roboto', sans-serif;
+    padding: 100px;
+}
+
+.card{
+    border: none;
+    width: 20%;
+    border-radius: 15px;
+    /* margin-left: 40%; */
+    padding: 45px;
+    margin-left: 40%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-warning {
+    color: #edb537;
+}
+
+
+.Sub-body input {
+    border-bottom: 1.5px solid #E8E5D2 !important;
+    font-weight: bold;
+    border-radius: 0;
+    border: 0
+}
+
+.Sub-body .form-group input:focus {
+    border: 0;
+    outline: 0
+}
+
+.Sub-body .btn {
+    background: #F3A002 !important;
+    border: none;
+    border-radius: 30px;
+    width: 65px;
+    float: right;
+}
+
+.Sub-body .btn:focus {
+    box-shadow: none
+}
