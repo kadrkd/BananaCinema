@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("parts/head")%>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+   <%- include("parts/header")%>
+
+        
+
+        <form class="search" method="POST" action="/movies">
+            <input type="text" name="movie_name" placeholder="Enter the name of movie" required>
+            <input class="btn" class="button" type="submit" value="search"></input>
+        </form>
+
+
+    <div class="main-content">
+        <div class="film-list">
+            <div class="col-md-12 outline-div">
+                <% if(typeof ans != 'undefined') {%>
+                 <% for(var i=0; i < ans.results.length; i++) { %>
+                   <div class="review">
+                        <div class="movie-pic">
+                            <a href="#"><img src="https://image.tmdb.org/t/p/w500/<%=ans.results[i].poster_path%>" alt="" /></a>
+                        </div>
+                        <div class="review-info">
+                            <form action="/movies/movie" method="POST">
+                            <input name="movieid" type="hidden" value="<%= ans.results[i].id %>">
+                            <input class="span" type="submit" value="<%= ans.results[i].title %>" />
+                            </form>
+                               
+                                
+                            <p>Average Rating is <%= ans.results[i].vote_average %>/10<p>
+                                <br>
+                            <p class="info"><%= ans.results[i].overview %></p>
+
+                        </div>
+                        
+                    </div>
+                    
+                        <hr>
+                <% } }%>
+
+            </div>
+        </div>
+    </div>
+        
+    
+    <%- include("parts/footer")%>
+    
+
+</body>
+</html>

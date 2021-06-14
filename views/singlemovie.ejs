@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <%- include("parts/head")%>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <%- include("parts/header")%>
+
+                    <div class="films-list">
+                    <div class="revieww">
+                        <div class="movie-pic">
+                            <a href="#"><img src="https://image.tmdb.org/t/p/w500/<%=ans.poster_path%>" alt="" /></a>
+                        </div>
+                            <div class="review-info">
+                            <h1><%= ans.title %></h1>
+                            <a class="span" href=""><i class="fa fa-thumbs-up like" aria-hidden="true"></i></a>
+
+                            <p class="dirctr">
+                                <% if( ans.production_countries.length != 0) { %>
+                                    <%= ans.production_countries[0].iso_3166_1  %> 
+                                <% } %>  Release date: <%= ans.release_date %></p>								
+                                <p class="ratingview">
+                                    &nbsp;<%= ans.vote_average %>
+                                </p>
+                           
+                                <div class="rtm">
+                                    
+                                    
+                                       
+                                      <a href="#zatemnenie">Add TO CART</a>
+                                 
+                                </div>
+                                </div>
+
+                            
+                            <p class="info">COMPANIES:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <% for(var i = 0; i < ans.production_companies.length; i++) {%>
+                                <%= ans.production_companies[i].name %>
+                                 <%   if(i + 1 != ans.production_companies.length){ %>
+                                                ,
+                                              <%   } else {  %>
+                                              . 
+                                <% }%>
+                                <% } %>
+                            </p>
+                            <p class="info">GENRE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <% for(var i = 0; i < ans.genres.length; i++) {%>
+                                <%= ans.genres[i].name %>
+                                 <%   if(i + 1 != ans.genres.length){ %>
+                                                ,
+                                              <%   } else {  %>
+                                              . 
+                                <% }%>
+                                <% } %>
+                            </p>
+                            <p class="info">DURATION:&nbsp;&nbsp;&nbsp; &nbsp; <%= ans.runtime %> minutes</p>
+                            <p class="status">STATUS:&nbsp;&nbsp;&nbsp; &nbsp;<%= ans.status %></p>
+                        </div>
+                        </div>
+                            <div class="story-review">
+                                <h4>REVIEW:</h4>
+                                <p><%= ans.overview %></p>
+                                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/esvycD1O3cM" title="banana" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                    </div>
+                    
+							
+
+
+    <%- include("parts/footer")%>
+    
+</body>
+</html>

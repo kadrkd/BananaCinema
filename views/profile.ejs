@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("parts/head") %>
+    <link rel="stylesheet" href="Account.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <%- include("parts/header") %>
+        
+        <div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYxeM3cC6Jn3jih3U8tzPqFgCwTOw0D45HQ&usqp=CAU" alt=""/>
+                            <div class="file btn btn-lg btn-primary">
+                                Change Photo
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                            <h2><%= user.fname %> <%= user.lname %></h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>First Name</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><%= user.fname %> </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Last Name</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><%= user.lname %> </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><%= user.email %> </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Age</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><%= user.age %> </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Subscription</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><%= user.subscribed%></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                    </div>
+                </div>
+            </form>           
+        </div>
+    <%- include("parts/footer") %>
+</body>
+</html>

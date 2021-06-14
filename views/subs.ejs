@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%- include("parts/head") %>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Account.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+   
+  width: 33.3%;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+   margin-top:100px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #02150A;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #FF9F1D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.button:hover{
+    background: white;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<%- include("parts/header") %>
+
+<% if(user.subscribed == false){ %>
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Basic Monthly Tarif</li>
+        <li class="grey">$ 0.0$ / year</li>
+        <li>Security</li>
+        <li>Speed</li>
+        <li class="grey">
+            <form action="/subs" method="POST">
+                <input name="subbed" type="hidden" value="<%= user._id %>">
+                <input class="button" type="submit" value="PAY" />
+            </form>
+        </li>
+      </ul>
+    </div>
+    <div style="width: 100%; text-align: center;"><h3>Use the opportunity to buy for 0$. It is our Sales!</h3></div>
+<% } else {%>
+        <div style="width: 100%; text-align: center;"><h3>You have already Subscriben! Enjoy your life!</h3></div>
+<% } %>
+<%- include("parts/footer") %>
+</body>
+</html>

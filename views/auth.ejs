@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("parts/head") %>
+    <base href="/auth">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    
+    <%- include("parts/header") %>
+
+    
+    
+    <div class="subnav">
+        <a type="button" class="btn btn-dark" href="#" onclick="$('.sign').hide();$('.login').show('slow')">Login</a>
+        <a type="button" class="btn btn-dark" href="#" onclick="$('.login').hide();$('.sign').show('slow')">Register</a>
+    </div>
+    <% if( typeof alertR != 'undefined') { %>
+      <div class="alert alert-danger" role="alert"> <%= alertR %> </div>
+    <% } if( typeof alertL != 'undefined'){ %>
+      <div class="alert alert-danger" role="alert"> <%= alertL %> </div>
+    <% } %>
+       <form class="sign" id="box1" method="POST" action="/auth">
+            <h1>Registration</h1>
+            <input type="text" placeholder="Enter your first name" name="fname" required>
+            <input type="text" placeholder="Enter your last name" name="lname" required>
+            <input type="email" placeholder="Enter your Email" name="email" required> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Enter Password Again" name="re_password" required>
+            <input type="text" placeholder="Enter your age" name="age">
+           
+            <input class="btn btn-primary btn-lg mt-3" class="button" type="submit" value="Sign Up" title=" Submit form">
+            
+        </form>
+
+      
+        <form class="login" id="box2" method="POST" action="/auth/login">
+              <h1>Log in</h1><br />
+              <input type="text" placeholder="Enter Email" name="email" required>
+              <input type="password" placeholder="Enter Password" name="password" required>
+              
+              <input class="btn btn-primary btn-lg" class="button" type="submit" value="Log In" title="Submit form">
+        </form>
+      
+
+</div>
+
+
+    
+    
+</body>
+</html>
+    
+	

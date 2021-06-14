@@ -1,0 +1,32 @@
+<div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+            <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>BA<span class="main-color">na</span>na
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/movies">Movies</a></li>
+                    <li><a href="/subs">Subscript</a></li>                     
+                        <% if(typeof user != 'undefined' && user != null){ %>
+                        <li><div class="dropdown">
+
+                            <a class="dropdown-toggle" href="#" role="btn" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" ><img src="./images/proficon.jpg"  width="50px" style="margin-left:30px;"></a>
+
+                            <ul style="background-color: black; border: 2px solid white; padding-top:20px;"class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <li> </li>
+                                <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                             </ul>
+                        </div></li>
+                        <% } else { %>
+                            <li><a href="/auth" class="btn btn-hover"><span>Join US!<span></a></li>
+                        <% } %>
+                    
+                </ul>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
