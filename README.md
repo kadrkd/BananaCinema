@@ -13,6 +13,6 @@ Used Packages: express, mongoose, joi, body-parser, cookie-parser, dotenv, ejs, 
 - Server will run on port 3000
 - Create .env file ` DB_CONNECTION ` - default mongoose server and ` SECRET_TOKEN ` - for login
 
-##### ~UPD~
+##### ~UPD
 hosted by heroku in domain https://bananacinema.herokuapp.com/
 
